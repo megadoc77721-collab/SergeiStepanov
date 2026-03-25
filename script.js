@@ -1,5 +1,6 @@
 const GOOGLE_DRIVE_FOLDER_URL =
   "https://drive.google.com/drive/folders/13yMQpG6YNpLsDqNw5dxl4r9NlPa3SMBE?usp=sharing";
+const GOOGLE_DRIVE_MANIFEST_URL = "./drive-manifest.json";
 
 const portfolioSeed = [
   {
@@ -80,11 +81,8 @@ const header = document.querySelector(".site-header");
 const nav = document.querySelector(".nav");
 const navToggle = document.querySelector(".nav__toggle");
 const navLinks = [...document.querySelectorAll(".nav__links a")];
-const contactForm = document.querySelector("#contactForm");
-const formNote = document.querySelector("#formNote");
 const lightbox = document.querySelector("#lightbox");
 const lightboxImage = document.querySelector(".lightbox__image");
-const lightboxCaption = document.querySelector(".lightbox__caption");
 const lightboxClose = document.querySelector(".lightbox__close");
 const revealElements = [...document.querySelectorAll(".reveal")];
 const parallaxLayers = [...document.querySelectorAll("[data-parallax]")];
@@ -126,6 +124,23 @@ function driveImageUrl(fileId) {
 }
 
 async function fetchGoogleDriveImages() {
+  try {
+    const manifestResponse = await fetch(GOOGLE_DRIVE_MANIFEST_URL, { cache: "no-store" });
+    if (manifestResponse.ok) {
+      const manifest = await manifestResponse.json();
+      if (Array.isArray(manifest) && manifest.length > 0) {
+        return manifest.map((item) => ({
+          id: item.id,
+          src: item.src || driveImageUrl(item.id),
+          original: item.original || driveImageUrl(item.id),
+          name: item.name || ""
+        }));
+      }
+    }
+  } catch (error) {
+    console.warn("Local Google Drive manifest unavailable, falling back to folder parsing.", error);
+  }
+
   const folderId = getFolderId(GOOGLE_DRIVE_FOLDER_URL);
   if (!folderId) {
     throw new Error("Google Drive folder ID not found.");
@@ -143,18 +158,27 @@ async function fetchGoogleDriveImages() {
 
   return ids.map((id) => ({
     id,
-    src: driveImageUrl(id)
+    src: driveImageUrl(id),
+    original: driveImageUrl(id),
+    name: ""
   }));
 }
 
 function buildPortfolioItems(images) {
-  return portfolioSeed.map((item, index) => {
-    const image = images[index];
+  const source = images.length > 0 ? images : portfolioSeed;
+  return source.map((image, index) => {
+    const fallbackMeta = portfolioSeed[index % portfolioSeed.length];
+    const derivedTitle =
+      typeof image.name === "string" && image.name
+        ? image.name.replace(/\.[a-z0-9]+$/i, "").replace(/[_-]+/g, " ")
+        : fallbackMeta.title;
+
     return {
-      ...item,
+      ...fallbackMeta,
+      title: derivedTitle,
       image: image?.src || createPlaceholder(index),
-      original: image?.src || createPlaceholder(index),
-      isPlaceholder: !image
+      original: image?.original || image?.src || createPlaceholder(index),
+      isPlaceholder: !image?.src
     };
   });
 }
@@ -164,9 +188,6 @@ function createCard(item, index) {
   const card = fragment.querySelector(".portfolio-card");
   const button = fragment.querySelector(".portfolio-card__button");
   const image = fragment.querySelector("img");
-  const category = fragment.querySelector(".portfolio-card__category");
-  const title = fragment.querySelector(".portfolio-card__title");
-  const description = fragment.querySelector(".portfolio-card__description");
 
   card.dataset.category = item.category;
   image.src = item.image;
@@ -174,10 +195,6 @@ function createCard(item, index) {
   image.onerror = () => {
     image.src = createPlaceholder(index);
   };
-
-  category.textContent = item.label;
-  title.textContent = item.title;
-  description.textContent = item.description;
 
   button.addEventListener("click", () => openLightbox(item.original, item.title));
   return fragment;
@@ -190,6 +207,10 @@ function renderPortfolio(items) {
 }
 
 function renderMiniPreviews(items) {
+  if (!miniPreviews) {
+    return;
+  }
+
   miniPreviews.innerHTML = "";
   items.slice(0, 3).forEach((item, index) => {
     const preview = document.createElement("div");
@@ -218,8 +239,7 @@ function applyFilter(filter) {
 
 function openLightbox(src, alt) {
   lightboxImage.src = src;
-  lightboxImage.alt = alt;
-  lightboxCaption.textContent = alt;
+  lightboxImage.alt = "Изображение портфолио";
   lightbox.classList.add("is-open");
   lightbox.setAttribute("aria-hidden", "false");
   document.body.style.overflow = "hidden";
@@ -285,37 +305,6 @@ function setupNavigation() {
   window.addEventListener("scroll", updateHeader, { passive: true });
 }
 
-function setupContactForm() {
-  if (!contactForm || !formNote) {
-    return;
-  }
-
-  contactForm.addEventListener("submit", (event) => {
-    event.preventDefault();
-
-    const recipient = contactForm.dataset.recipient || "";
-    const formData = new FormData(contactForm);
-    const name = String(formData.get("name") || "").trim();
-    const email = String(formData.get("email") || "").trim();
-    const message = String(formData.get("message") || "").trim();
-
-    if (!recipient || recipient === "hello@yourdomain.com") {
-      formNote.textContent =
-        "Укажите ваш рабочий email в атрибуте data-recipient формы, и отправка будет открываться через почтовый клиент.";
-      return;
-    }
-
-    const subject = encodeURIComponent(`Новый запрос с сайта от ${name}`);
-    const body = encodeURIComponent(
-      `Имя: ${name}\nEmail: ${email}\n\nСообщение:\n${message}`
-    );
-
-    window.location.href = `mailto:${recipient}?subject=${subject}&body=${body}`;
-    formNote.textContent = "Письмо подготовлено в почтовом клиенте.";
-    contactForm.reset();
-  });
-}
-
 async function initPortfolio() {
   try {
     const driveImages = await fetchGoogleDriveImages();
@@ -353,5 +342,4 @@ document.addEventListener("keydown", (event) => {
 observeReveals(revealElements);
 setupParallax();
 setupNavigation();
-setupContactForm();
 initPortfolio();
