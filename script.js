@@ -443,10 +443,38 @@ function switchCategory(categoryId) {
 function setModalMedia(item) {
   modalMedia.innerHTML = "";
 
+  if (item.mediaType === "image") {
+    const image = document.createElement("img");
+    image.src = item.previewLocal || driveImageProxyUrl(item.id) || item.thumb || item.src;
+    image.alt = item.title || item.name;
+    image.loading = "eager";
+    image.decoding = "async";
+    image.onerror = () => {
+      if (image.dataset.fallbackTried !== "true") {
+        image.dataset.fallbackTried = "true";
+        image.src = driveImageUrl(item.id);
+        return;
+      }
+      image.src = createPlaceholder(0, item.title || item.name);
+    };
+    modalMedia.append(image);
+    return;
+  }
+
+  if (item.mediaType === "video") {
+    const iframe = document.createElement("iframe");
+    iframe.src = item.preview;
+    iframe.allow = "autoplay; fullscreen";
+    iframe.loading = "eager";
+    iframe.setAttribute("allowfullscreen", "");
+    iframe.title = item.title;
+    modalMedia.append(iframe);
+    return;
+  }
+
   const iframe = document.createElement("iframe");
   iframe.src = item.preview;
-  iframe.allow = "autoplay";
-  iframe.loading = "lazy";
+  iframe.loading = "eager";
   iframe.setAttribute("allowfullscreen", "");
   iframe.title = item.title;
   modalMedia.append(iframe);
