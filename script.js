@@ -36,6 +36,7 @@ const placeholderPalettes = [
 
 const header = document.querySelector(".site-header");
 const nav = document.querySelector(".nav");
+const navBrand = document.querySelector(".nav__brand");
 const navToggle = document.querySelector(".nav__toggle");
 const navLinks = [...document.querySelectorAll(".nav__links a")];
 const heroImage = document.querySelector("#heroImage");
@@ -544,6 +545,17 @@ function setupNavigation() {
   updateHeader();
   window.addEventListener("scroll", updateHeader, { passive: true });
   navToggle.addEventListener("click", toggleMenu);
+
+  navBrand?.addEventListener("click", (event) => {
+    event.preventDefault();
+    nav.classList.remove("is-open");
+    navToggle.setAttribute("aria-expanded", "false");
+    document.body.classList.remove("nav-open");
+    window.scrollTo({ top: 0, behavior: "smooth" });
+    if (window.location.hash) {
+      history.replaceState(null, "", window.location.pathname + window.location.search);
+    }
+  });
 
   navLinks.forEach((link) => {
     link.addEventListener("click", () => {
