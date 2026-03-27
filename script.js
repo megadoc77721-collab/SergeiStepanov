@@ -531,18 +531,30 @@ function observeReveals(elements) {
 }
 
 function scrollPageToTop() {
-  const topTarget = document.querySelector("#top") || document.body;
+  const topTarget = document.querySelector("#pageTop") || document.querySelector("#top") || document.body;
+  const scrollingElement = document.scrollingElement || document.documentElement || document.body;
 
   if (topTarget && typeof topTarget.scrollIntoView === "function") {
     topTarget.scrollIntoView({ behavior: "smooth", block: "start" });
   }
 
-  window.scrollTo({ top: 0, behavior: "smooth" });
+  if (typeof scrollingElement.scrollTo === "function") {
+    scrollingElement.scrollTo({ top: 0, behavior: "smooth" });
+  }
+
+  window.scrollTo(0, 0);
 
   window.requestAnimationFrame(() => {
+    scrollingElement.scrollTop = 0;
     document.documentElement.scrollTop = 0;
     document.body.scrollTop = 0;
   });
+
+  window.setTimeout(() => {
+    scrollingElement.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+    document.body.scrollTop = 0;
+  }, 120);
 }
 
 function setupNavigation() {
