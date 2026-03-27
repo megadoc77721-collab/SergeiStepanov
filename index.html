@@ -3,299 +3,113 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ElenaLebedevaPortfolio</title>
+  <title>Сергей Степанов | Портфолио</title>
   <meta
     name="description"
-    content="Лебедева Елена — дизайнер фотоконтента для маркетплейсов, упаковки, меню, полиграфии и соцсетей."
+    content="Премиальное dark-mode портфолио Сергея Степанова с динамической загрузкой изображений, видео и PDF из Google Drive."
   >
-  <meta
-    name="keywords"
-    content="Лебедева Елена, дизайнер фотоконтента, маркетплейсы, упаковка, меню, полиграфия, соцсети, портфолио"
-  >
-  <meta name="theme-color" content="#f7f7fb">
-  <meta property="og:title" content="ElenaLebedevaPortfolio">
+  <meta name="theme-color" content="#0b0b0b">
+  <meta property="og:title" content="Сергей Степанов | Портфолио">
   <meta
     property="og:description"
-    content="Премиум-портфолио Елены Лебедевой: маркетплейсы, упаковка, полиграфия, меню и соцсети."
+    content="Кинематографичное портфолио Сергея Степанова: принты, баннеры, ивенты, соцсети, фото и меню."
   >
   <meta property="og:type" content="website">
-  <meta property="og:locale" content="ru_RU">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
-    rel="stylesheet"
-  >
   <link rel="stylesheet" href="styles.css">
-  <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Person",
-      "name": "ElenaLebedevaPortfolio",
-      "jobTitle": "Дизайнер фотоконтента",
-      "description": "Дизайнер фотоконтента для маркетплейсов, полиграфии, упаковки, меню и соцсетей.",
-      "url": "https://t.me/lllina",
-      "sameAs": [
-        "https://t.me/lllina",
-        "https://vk.ru/li.kill"
-      ]
-    }
-  </script>
 </head>
 <body>
-  <div class="page-bg" aria-hidden="true"></div>
+  <div class="page-noise" aria-hidden="true"></div>
+  <div class="page-orbs" aria-hidden="true">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
 
   <header class="site-header" id="top">
     <nav class="nav shell" aria-label="Основная навигация">
-      <a class="nav__brand" href="#top">ElenaLebedevaPortfolio</a>
+      <a class="nav__brand" href="#top">
+        <span class="nav__brand-mark"></span>
+        Сергей Степанов
+      </a>
       <button class="nav__toggle" type="button" aria-expanded="false" aria-label="Открыть меню">
         <span></span>
         <span></span>
       </button>
       <div class="nav__links">
-        <a href="#services">Услуги</a>
         <a href="#portfolio">Портфолио</a>
-        <a href="#about">Обо мне</a>
-        <a href="#credentials">Фото и сертификаты</a>
         <a href="#contact">Контакты</a>
+        <a href="https://t.me/SYIBWR" target="_blank" rel="noreferrer">Telegram</a>
+        <a href="https://vk.ru/syibwr" target="_blank" rel="noreferrer">VK</a>
       </div>
     </nav>
   </header>
 
   <main>
-    <section class="hero section shell" id="hero">
-      <div class="hero__backdrop parallax" data-parallax="0.12">
-        <div class="hero__gradient"></div>
-      </div>
+    <section class="hero shell" id="hero">
       <div class="hero__content reveal">
-        <p class="eyebrow">ElenaLebedevaPortfolio</p>
-        <h1>Визуальные системы, которые продают с первого взгляда.</h1>
-        <p class="hero__lead">
-          Я создаю дизайн фотоконтента для маркетплейсов, упаковки, меню, полиграфии и соцсетей
-          с премиальной подачей, вниманием к деталям и современной визуальной логикой.
-        </p>
-        <div class="hero__actions">
-          <a class="button button--primary" href="#portfolio">Смотреть проекты</a>
-          <a class="button button--ghost" href="#contact">Обсудить задачу</a>
+        <div class="hero__intro">
+          <h1>Сергей Степанов</h1>
+          <p>Graphic designer / Merch &amp; Visual designer</p>
         </div>
       </div>
-      <aside class="hero__glass glass reveal reveal--delay">
-        <p class="hero__glass-label">Фокус</p>
-        <h2>Контент, который усиливает бренд на каждом носителе.</h2>
-        <ul class="hero__stats" aria-label="Ключевые направления">
-          <li><span>01</span> Маркетплейсы</li>
-          <li><span>02</span> Упаковка</li>
-          <li><span>03</span> Меню и печать</li>
-          <li><span>04</span> Social-first визуал</li>
-        </ul>
-      </aside>
-    </section>
 
-    <section class="section shell intro-strip reveal" aria-label="Преимущества">
-      <div class="glass intro-strip__panel">
-        <p>Чистая арт-дирекция</p>
-        <p>Премиальная подача продукта</p>
-        <p>Гибкость под digital и print</p>
-        <p>Визуал, который повышает доверие</p>
+      <div class="hero__media reveal reveal--delay">
+        <div class="hero__media-frame" id="heroMediaFrame">
+          <div class="hero__video-wrap" id="heroVideoWrap" aria-hidden="true">
+            <video class="hero__video" autoplay muted loop playsinline preload="auto">
+              <source src="./assets/hero/hero.mp4" type="video/mp4">
+            </video>
+          </div>
+          <img id="heroImage" src="" alt="Главная работа Сергея Степанова" loading="eager">
+          <div class="hero__media-glow"></div>
+        </div>
       </div>
     </section>
 
-    <section class="section shell services" id="services">
-      <div class="section-heading reveal">
-        <p class="eyebrow">Services</p>
-        <h2>Что я делаю</h2>
-        <p>
-          Работаю с визуальной упаковкой продукта и бренда: от продающих карточек для
-          маркетплейсов до печатных материалов и контента для соцсетей.
-        </p>
-      </div>
-
-      <div class="services-grid">
-        <article class="glass service-card reveal">
-          <p class="eyebrow">Marketplace</p>
-          <h3>Карточки товара и визуалы для маркетплейсов</h3>
-          <p>Первый экран, инфографика, композиция преимуществ, lifestyle-сцены и единая визуальная система.</p>
-        </article>
-        <article class="glass service-card reveal reveal--delay">
-          <p class="eyebrow">Packaging</p>
-          <h3>Упаковка и полиграфия</h3>
-          <p>Этикетки, коробки, вкладыши, каталоги, POS-материалы и печатные решения с чистой типографикой.</p>
-        </article>
-        <article class="glass service-card reveal">
-          <p class="eyebrow">Social</p>
-          <h3>Меню, соцсети и промо-креативы</h3>
-          <p>Контент для заведений и брендов, который сохраняет стиль, читабельность и ощущение высокого класса.</p>
-        </article>
-      </div>
-    </section>
-
-    <section class="section shell reveal" id="portfolio">
-      <div class="section-heading">
-        <p class="eyebrow">Selected Work</p>
+    <section class="section shell portfolio" id="portfolio">
+      <div class="portfolio-intro reveal">
+        <p class="portfolio-intro__eyebrow">Portfolio</p>
         <h2>Портфолио</h2>
-        <p>
-          Проекты сортируются по направлениям. Изображения подтягиваются из публичной папки
-          Google Drive; если часть файлов недоступна, интерфейс автоматически покажет placeholder.
-        </p>
       </div>
 
-      <div class="filters glass" role="toolbar" aria-label="Фильтрация портфолио">
-        <button class="filter-button is-active" type="button" data-filter="all">Все</button>
-        <button class="filter-button" type="button" data-filter="marketplaces">Маркетплейсы</button>
-        <button class="filter-button" type="button" data-filter="print">Полиграфия</button>
-        <button class="filter-button" type="button" data-filter="packaging">Упаковка</button>
-        <button class="filter-button" type="button" data-filter="menu">Меню</button>
-        <button class="filter-button" type="button" data-filter="social">Соцсети</button>
-      </div>
-
-      <div class="portfolio-grid" id="portfolioGrid" aria-live="polite"></div>
-      <div class="portfolio-note glass reveal">
-        <p>
-          Папка Google Drive подключена как источник контента. Если часть изображений не отдается
-          напрямую браузеру, сайт сохраняет сетку и подставляет аккуратные placeholder-кадры без
-          поломки интерфейса.
-        </p>
-      </div>
-    </section>
-
-    <section class="section shell about" id="about">
-      <div class="about__content reveal">
-        <div class="section-heading">
-          <p class="eyebrow">About</p>
-          <h2>Обо мне</h2>
-        </div>
-        <div class="glass about__card">
-          <p>
-            Меня зовут Елена Лебедева. Я создаю фотоконтент и визуальные материалы для
-            маркетплейсов, упаковки, меню, полиграфии и соцсетей. Мне важно, чтобы работа не просто
-            выглядела красиво, а усиливала восприятие бренда и помогала продукту продавать.
-          </p>
-          <div class="skill-list" aria-label="Навыки">
-            <span>Art Direction</span>
-            <span>Retouch</span>
-            <span>Packaging</span>
-            <span>Menu Design</span>
-            <span>Marketplace Graphics</span>
-            <span>Social Media Visuals</span>
-          </div>
-        </div>
-        <div class="metrics-grid">
-          <div class="glass metric-card">
-            <strong>5</strong>
-            <span>Ключевых направлений</span>
-          </div>
-          <div class="glass metric-card">
-            <strong>1</strong>
-            <span>Единый premium-стандарт</span>
-          </div>
-          <div class="glass metric-card">
-            <strong>360°</strong>
-            <span>Визуальная экосистема бренда</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="about__highlights reveal reveal--delay">
-        <article class="glass profile-card profile-card--about">
-          <div class="profile-card__media">
-            <img src="assets/drive/ZZZ.PNG" alt="Лебедева Елена" loading="lazy">
-          </div>
-        </article>
-        <article class="glass highlight-card">
-          <p class="eyebrow">Подход</p>
-          <h3>Минимализм, внимание к деталям и визуал, который работает на доверие.</h3>
-          <p>Собираю проекты так, чтобы они одинаково хорошо выглядели в digital, печати и карточках товара.</p>
-        </article>
-      </div>
-    </section>
-
-    <section class="section shell credentials" id="credentials">
-      <div class="section-heading reveal">
-        <p class="eyebrow">Credentials</p>
-        <h2>Сертификаты</h2>
-        <p>
-          Дополнительная подготовка и подтверждение навыков, которые расширяют мой профессиональный
-          кругозор и помогают лучше понимать digital-среду и маркетплейсы.
-        </p>
-      </div>
-
-      <div class="credentials__certificates">
-        <article class="glass certificate-card reveal">
-          <div class="certificate-card__media">
-            <img src="assets/drive/IMG_1128.PNG" alt="Сертификат Менеджер маркетплейса" loading="lazy">
-          </div>
-          <div class="certificate-card__body">
-            <p class="eyebrow">Сертификат</p>
-            <h3>Менеджер маркетплейса</h3>
-            <p>Стажировка по профессии менеджера маркетплейса.</p>
-          </div>
-        </article>
-
-        <article class="glass certificate-card reveal reveal--delay">
-          <div class="certificate-card__media">
-            <img src="assets/drive/IMG_2049.jpg" alt="Сертификат Поколение Python" loading="lazy">
-          </div>
-          <div class="certificate-card__body">
-            <p class="eyebrow">Сертификат</p>
-            <h3>Поколение Python</h3>
-            <p>Stepik / Поколение Python: курс для начинающих.</p>
-          </div>
-        </article>
-      </div>
+      <div class="portfolio-tabs glass-panel reveal" id="portfolioTabs" role="tablist" aria-label="Разделы портфолио"></div>
+      <div class="portfolio-stage" id="portfolioStage" aria-live="polite"></div>
     </section>
 
     <section class="section shell contact" id="contact">
-      <div class="section-heading reveal">
-        <p class="eyebrow">Contact</p>
-        <h2>Связаться</h2>
-        <p>
-          Для связи используйте Telegram и VK. Открыта к проектной работе и регулярному
-          визуальному сопровождению.
-        </p>
+      <div class="portfolio-intro reveal">
+        <p class="portfolio-intro__eyebrow">Contact</p>
+        <h2>Контакты</h2>
       </div>
 
-      <div class="contact__grid">
-        <div class="contact__info contact__info--wide reveal">
-          <div class="glass contact-card">
-            <p class="eyebrow">Контакты</p>
-            <a href="https://t.me/lllina" target="_blank" rel="noreferrer">Telegram</a>
-            <a href="https://vk.ru/li.kill" target="_blank" rel="noreferrer">ВКонтакте</a>
-          </div>
-          <div class="glass contact-card">
-            <p class="eyebrow">Форматы работы</p>
-            <p>Карточки для маркетплейсов, оформление меню, упаковка, соцсети, каталоги, POS-материалы.</p>
-          </div>
-          <div class="glass contact-card">
-            <p class="eyebrow">Доступность</p>
-            <p>Удаленно, по проектам и на регулярное визуальное сопровождение бренда.</p>
-          </div>
-        </div>
+      <div class="contact-links reveal">
+        <a class="contact-link glass-panel" href="https://t.me/SYIBWR" target="_blank" rel="noreferrer">Telegram</a>
+        <a class="contact-link glass-panel" href="https://vk.ru/syibwr" target="_blank" rel="noreferrer">VK</a>
       </div>
     </section>
   </main>
 
   <footer class="site-footer shell">
-    <div class="glass site-footer__panel">
-      <p>ElenaLebedevaPortfolio</p>
-      <p>Портфолио дизайнера фотоконтента для брендов, маркетплейсов и полиграфии.</p>
+    <div class="site-footer__panel glass-panel">
+      <p>Сергей Степанов</p>
+      <p>Graphic designer / Merch &amp; Visual designer</p>
     </div>
   </footer>
 
-  <div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-label="Просмотр изображения">
-    <button class="lightbox__close" type="button" aria-label="Закрыть просмотр">&times;</button>
-    <img class="lightbox__image" src="" alt="Изображение портфолио">
+  <div class="project-modal" id="projectModal" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Просмотр проекта">
+    <div class="project-modal__backdrop" data-close-modal></div>
+    <div class="project-modal__dialog glass-panel">
+      <button class="project-modal__close" type="button" aria-label="Закрыть проект" data-close-modal>&times;</button>
+      <div class="project-modal__media" id="modalMedia"></div>
+    </div>
   </div>
 
-  <template id="portfolioCardTemplate">
-    <article class="portfolio-card glass reveal">
-      <button class="portfolio-card__button" type="button">
-        <div class="portfolio-card__media">
-          <img loading="lazy" alt="">
-        </div>
-      </button>
-    </article>
+  <template id="categoryPanelTemplate">
+    <section class="category-panel"></section>
   </template>
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
   <script src="script.js" defer></script>
 </body>
 </html>
