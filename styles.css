@@ -1255,6 +1255,7 @@ textarea {
     gap: 10px;
     padding: 14px;
     border-radius: 20px;
+    top: calc(100% + 8px);
   }
 
   .nav__links a {
@@ -1349,14 +1350,23 @@ textarea {
 
   .portfolio-tabs {
     gap: 8px;
-    padding: 10px;
+    padding: 8px;
     border-radius: 20px;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    scrollbar-width: none;
+  }
+
+  .portfolio-tabs::-webkit-scrollbar {
+    display: none;
   }
 
   .tab-button {
-    padding: 10px 14px;
-    font-size: 0.88rem;
-    min-height: 40px;
+    flex: 0 0 auto;
+    padding: 9px 13px;
+    font-size: 0.84rem;
+    min-height: 38px;
+    white-space: nowrap;
   }
 
   .portfolio-stage {
@@ -1374,7 +1384,7 @@ textarea {
   }
 
   .story-media {
-    min-height: 250px;
+    min-height: 220px;
     border-radius: 20px;
   }
 
@@ -1393,7 +1403,7 @@ textarea {
   }
 
   .project-card {
-    min-height: 240px;
+    min-height: 210px;
     border-radius: 22px;
   }
 
@@ -1402,7 +1412,7 @@ textarea {
   .category-panel[data-category="banners"] .project-card--feature,
   .category-panel[data-category="events"] .project-card--feature,
   .category-panel[data-category="social"] .project-card--feature {
-    min-height: 300px;
+    min-height: 260px;
   }
 
   .category-panel[data-category="banners"] .project-card,
@@ -1414,7 +1424,7 @@ textarea {
   }
 
   .category-panel[data-category="photo"] .project-card--tall {
-    min-height: 300px;
+    min-height: 260px;
   }
 
   .contact-links {
@@ -1483,12 +1493,13 @@ textarea {
   }
 
   .nav__brand {
-    font-size: 0.9rem;
+    font-size: 0.84rem;
+    gap: 8px;
   }
 
   .nav__toggle {
-    width: 42px;
-    height: 42px;
+    width: 40px;
+    height: 40px;
   }
 
   .hero__content h1 {
@@ -1502,34 +1513,35 @@ textarea {
   }
 
   .hero__media-frame {
-    min-height: 260px;
+    min-height: 220px;
     border-radius: 22px;
   }
 
   .portfolio-tabs {
-    padding: 8px;
+    padding: 6px;
+    border-radius: 18px;
   }
 
   .tab-button {
-    flex: 1 1 auto;
-    text-align: center;
-    justify-content: center;
+    padding: 8px 12px;
+    min-height: 36px;
+    font-size: 0.8rem;
   }
 
   .project-grid,
   .story-list {
-    gap: 10px;
+    gap: 8px;
   }
 
   .project-card {
-    min-height: 210px;
+    min-height: 180px;
     border-radius: 18px;
   }
 
   .project-card--tall,
   .project-card--feature,
   .category-panel[data-category="photo"] .project-card--tall {
-    min-height: 270px;
+    min-height: 220px;
   }
 
   .story-card {
@@ -1538,7 +1550,31 @@ textarea {
   }
 
   .story-media {
-    min-height: 220px;
+    min-height: 190px;
     border-radius: 16px;
+  }
+
+  .story-media__device {
+    padding: 12px;
+  }
+
+  .project-modal__dialog {
+    border-radius: 20px;
+  }
+
+  .project-modal__close {
+    width: 40px;
+    height: 40px;
+    font-size: 1.5rem;
+  }
+
+  .contact-link {
+    min-height: 46px;
+    font-size: 0.92rem;
+  }
+
+  .site-footer__panel {
+    padding: 14px 16px;
+    border-radius: 18px;
   }
 }
