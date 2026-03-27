@@ -530,6 +530,21 @@ function observeReveals(elements) {
   });
 }
 
+function scrollPageToTop() {
+  const topTarget = document.querySelector("#top") || document.body;
+
+  if (topTarget && typeof topTarget.scrollIntoView === "function") {
+    topTarget.scrollIntoView({ behavior: "smooth", block: "start" });
+  }
+
+  window.scrollTo({ top: 0, behavior: "smooth" });
+
+  window.requestAnimationFrame(() => {
+    document.documentElement.scrollTop = 0;
+    document.body.scrollTop = 0;
+  });
+}
+
 function setupNavigation() {
   const updateHeader = () => {
     header.classList.toggle("is-scrolled", window.scrollY > 20);
@@ -551,10 +566,7 @@ function setupNavigation() {
     nav.classList.remove("is-open");
     navToggle.setAttribute("aria-expanded", "false");
     document.body.classList.remove("nav-open");
-    window.scrollTo({ top: 0, behavior: "smooth" });
-    if (window.location.hash) {
-      history.replaceState(null, "", window.location.pathname + window.location.search);
-    }
+    scrollPageToTop();
   });
 
   navLinks.forEach((link) => {
