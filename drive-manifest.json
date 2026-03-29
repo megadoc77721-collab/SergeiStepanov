@@ -16,10 +16,22 @@
       ],
       "items": [
         {
+          "id": "1asRdmOt7h5UhM5xOjVAY4oWAD_8iCIde",
+          "name": "AOT.png",
+          "mime": "image/png",
+          "previewLocal": "./assets/previews/1asRdmOt7h5UhM5xOjVAY4oWAD_8iCIde.jpg"
+        },
+        {
           "id": "1u9hYlgQ-iPBkt7Mb3T63n-Rd5Weq8YnH",
           "name": "AOT.png",
           "mime": "image/png",
           "previewLocal": "./assets/previews/1u9hYlgQ-iPBkt7Mb3T63n-Rd5Weq8YnH.jpg"
+        },
+        {
+          "id": "1EqM_xQlGDMNl_f9ey00nXJt2SNxj9UGS",
+          "name": "AOT1.png",
+          "mime": "image/png",
+          "previewLocal": "./assets/previews/1EqM_xQlGDMNl_f9ey00nXJt2SNxj9UGS.jpg"
         },
         {
           "id": "1wQ1qVOM2bS_sZkQoikMkOWKRBmXgKuf0",
@@ -32,18 +44,6 @@
           "name": "Deidara.png",
           "mime": "image/png",
           "previewLocal": "./assets/previews/119FFHVeKtEGTQtMhlMieHHAR9c415yr8.jpg"
-        },
-        {
-          "id": "1BB2Un8oHMMETtgNZbCWd3whcuF-db6Hr",
-          "name": "FeelTodo.png",
-          "mime": "image/png",
-          "previewLocal": "./assets/previews/1BB2Un8oHMMETtgNZbCWd3whcuF-db6Hr.jpg"
-        },
-        {
-          "id": "1mMxt_SkjeHVzFpdZDi9xxlDBTbQbbtOl",
-          "name": "Feelwing.png",
-          "mime": "image/png",
-          "previewLocal": "./assets/previews/1mMxt_SkjeHVzFpdZDi9xxlDBTbQbbtOl.jpg"
         },
         {
           "id": "1XQn0EzLzKLHCP5eojR3QMCL6-Rmx3Ozr",
@@ -70,12 +70,6 @@
           "previewLocal": "./assets/previews/117-mzoZqhoszpmwbw5NdqgLeslMd7vRT.jpg"
         },
         {
-          "id": "1jqdV880ZMsXpGLczEqMitv-VMXDRq67U",
-          "name": "t-shirtAOT.png",
-          "mime": "image/png",
-          "previewLocal": "./assets/previews/1jqdV880ZMsXpGLczEqMitv-VMXDRq67U.jpg"
-        },
-        {
           "id": "1t2yw0zmf_u9sI_umbVGlgP5ZCNZbaGbY",
           "name": "t-shirtFeel.png",
           "mime": "image/png",
@@ -100,22 +94,16 @@
           "previewLocal": "./assets/previews/1NG0ueHhTwGISQSteRZx9bC8wdX-1rtGh.jpg"
         },
         {
-          "id": "1ewgK7PUaeQNNjg-ShHHrN8a7aCgeQanQ",
-          "name": "t-shirtSimple.png",
+          "id": "1BB2Un8oHMMETtgNZbCWd3whcuF-db6Hr",
+          "name": "Todo.png",
           "mime": "image/png",
-          "previewLocal": "./assets/previews/1ewgK7PUaeQNNjg-ShHHrN8a7aCgeQanQ.jpg"
+          "previewLocal": "./assets/previews/1BB2Un8oHMMETtgNZbCWd3whcuF-db6Hr.jpg"
         },
         {
           "id": "1yTHDihjNph0eQoU2xXh1KoAnAD_T8D2m",
           "name": "Todo.png",
           "mime": "image/png",
           "previewLocal": "./assets/previews/1yTHDihjNph0eQoU2xXh1KoAnAD_T8D2m.jpg"
-        },
-        {
-          "id": "1l-OqK_7imivv7TJm0bJd7gqUeRMcVpz5",
-          "name": "Н1.1.png",
-          "mime": "image/png",
-          "previewLocal": "./assets/previews/1l-OqK_7imivv7TJm0bJd7gqUeRMcVpz5.jpg"
         },
         {
           "id": "1d_-gZLxV94oUmc_Bsg-dO9Xa0BJeyuc8",
@@ -138,88 +126,40 @@
       "mood": "Широкоформатные композиции, чистый акцент и digital-first подача.",
       "items": [
         {
+          "id": "1bi_6YA0HwP4A4--jm9EaF2jm7nqhlgfE",
+          "name": "2.1.png",
+          "mime": "image/png",
+          "previewLocal": "./assets/previews/1bi_6YA0HwP4A4--jm9EaF2jm7nqhlgfE.jpg"
+        },
+        {
+          "id": "1y_pmCw56hPO_zn44YXHCGaJynDVKqLqo",
+          "name": "2.2.png",
+          "mime": "image/png",
+          "previewLocal": "./assets/previews/1y_pmCw56hPO_zn44YXHCGaJynDVKqLqo.jpg"
+        },
+        {
+          "id": "1LsC7DrgDopNanhTTgvtay_Wb-fyopG7m",
+          "name": "2.3.png",
+          "mime": "image/png",
+          "previewLocal": "./assets/previews/1LsC7DrgDopNanhTTgvtay_Wb-fyopG7m.jpg"
+        },
+        {
           "id": "17NSui90F7IRjyzSLCYCPlxLJneUKmeBJ",
           "name": "b1.jpg",
           "mime": "image/jpeg",
           "previewLocal": "./assets/previews/17NSui90F7IRjyzSLCYCPlxLJneUKmeBJ.jpg"
         },
         {
-          "id": "17wZtWlffvF_RdojEiPAOko6ZAiPRhUsm",
-          "name": "h1.png",
+          "id": "1mMxt_SkjeHVzFpdZDi9xxlDBTbQbbtOl",
+          "name": "Feelwing.png",
           "mime": "image/png",
-          "previewLocal": "./assets/previews/17wZtWlffvF_RdojEiPAOko6ZAiPRhUsm.jpg"
-        },
-        {
-          "id": "12ljckbzuAr9HNzTAX5Q5fQKrPzFxAWGz",
-          "name": "h2.png",
-          "mime": "image/png",
-          "previewLocal": "./assets/previews/12ljckbzuAr9HNzTAX5Q5fQKrPzFxAWGz.jpg"
-        },
-        {
-          "id": "1yFO1O1gfzhYwRZRvfYLDRXMdG8ah57dH",
-          "name": "h3.jpg",
-          "mime": "image/jpeg",
-          "previewLocal": "./assets/previews/1yFO1O1gfzhYwRZRvfYLDRXMdG8ah57dH.jpg"
+          "previewLocal": "./assets/previews/1mMxt_SkjeHVzFpdZDi9xxlDBTbQbbtOl.jpg"
         },
         {
           "id": "1tEzmMEFjeIGREglW6P7_xjzU30Ev83yB",
           "name": "h4.jpg",
           "mime": "image/jpeg",
           "previewLocal": "./assets/previews/1tEzmMEFjeIGREglW6P7_xjzU30Ev83yB.jpg"
-        },
-        {
-          "id": "1MnuHYPLNV1VJMUqt67K7XtCV55yd6DOP",
-          "name": "o1.png",
-          "mime": "image/png",
-          "previewLocal": "./assets/previews/1MnuHYPLNV1VJMUqt67K7XtCV55yd6DOP.jpg"
-        },
-        {
-          "id": "1-BsQjdqbBZOjZtnadVtyreuDxfsjpEQm",
-          "name": "o2.png",
-          "mime": "image/png",
-          "previewLocal": "./assets/previews/1-BsQjdqbBZOjZtnadVtyreuDxfsjpEQm.jpg"
-        },
-        {
-          "id": "1vntTvzEE3_ygOf34yyAbXTQGhoQy1nf5",
-          "name": "o3.png",
-          "mime": "image/png",
-          "previewLocal": "./assets/previews/1vntTvzEE3_ygOf34yyAbXTQGhoQy1nf5.jpg"
-        },
-        {
-          "id": "1Ocq-DL4RLEop2VjUZOKH6wCjWC-PBphN",
-          "name": "o4.pdf",
-          "mime": "application/pdf",
-          "previewLocal": "./assets/previews/1Ocq-DL4RLEop2VjUZOKH6wCjWC-PBphN.jpg"
-        },
-        {
-          "id": "1xkJcZGo7P9TOOAKUaMqRhnoPkMjpxgQk",
-          "name": "o5.png",
-          "mime": "image/png",
-          "previewLocal": "./assets/previews/1xkJcZGo7P9TOOAKUaMqRhnoPkMjpxgQk.jpg"
-        },
-        {
-          "id": "1LQ-z3ft5Rl1LKZJd17n0OYVIFdzZCzQD",
-          "name": "o6.png",
-          "mime": "image/png",
-          "previewLocal": "./assets/previews/1LQ-z3ft5Rl1LKZJd17n0OYVIFdzZCzQD.jpg"
-        },
-        {
-          "id": "1pWYvGTm4z1PHqzQZlkCezuVurNMO9h13",
-          "name": "p1.png",
-          "mime": "image/png",
-          "previewLocal": "./assets/previews/1pWYvGTm4z1PHqzQZlkCezuVurNMO9h13.jpg"
-        },
-        {
-          "id": "1pSSMOIoHoFKYCWmTdMHR2p2V06fNIyf2",
-          "name": "p2.png",
-          "mime": "image/png",
-          "previewLocal": "./assets/previews/1pSSMOIoHoFKYCWmTdMHR2p2V06fNIyf2.jpg"
-        },
-        {
-          "id": "1BB4ANnKhAGABBdpLl96mwFZNtbz5Iv_j",
-          "name": "p3.jpg",
-          "mime": "image/jpeg",
-          "previewLocal": "./assets/previews/1BB4ANnKhAGABBdpLl96mwFZNtbz5Iv_j.jpg"
         },
         {
           "id": "1wFr1dD4oIJH0h7nGVjfx57DyUs51_Zoo",
@@ -244,6 +184,54 @@
           "name": "y3.png",
           "mime": "image/png",
           "previewLocal": "./assets/previews/1TqpXjday1uNapKl17E3ijHo_-2Q3APgX.jpg"
+        },
+        {
+          "id": "1VLLbl_o_UNa5nFDb0qDFToUk3CcvND4N",
+          "name": "КТ.png",
+          "mime": "image/png",
+          "previewLocal": "./assets/previews/1VLLbl_o_UNa5nFDb0qDFToUk3CcvND4N.jpg"
+        },
+        {
+          "id": "1hMRPcS-iXu8HO1hvbEny6XWR19Lr989i",
+          "name": "КТ.png",
+          "mime": "image/png",
+          "previewLocal": "./assets/previews/1hMRPcS-iXu8HO1hvbEny6XWR19Lr989i.jpg"
+        },
+        {
+          "id": "144tMEidKB2Aw8otBeJptngQYF1QbZqRc",
+          "name": "Превью1.png",
+          "mime": "image/png",
+          "previewLocal": "./assets/previews/144tMEidKB2Aw8otBeJptngQYF1QbZqRc.jpg"
+        },
+        {
+          "id": "1g3F45Bj2fvMEpmmMK4aN78K1pJE5288L",
+          "name": "Превью1.png",
+          "mime": "image/png",
+          "previewLocal": "./assets/previews/1g3F45Bj2fvMEpmmMK4aN78K1pJE5288L.jpg"
+        },
+        {
+          "id": "1T3wASNzLjLoOKrbmP56KCFrJjLUBNLYW",
+          "name": "Превью2.png",
+          "mime": "image/png",
+          "previewLocal": "./assets/previews/1T3wASNzLjLoOKrbmP56KCFrJjLUBNLYW.jpg"
+        },
+        {
+          "id": "1Ul8SZrcrvH0nb1BR-hgkM06NOfiCr0CH",
+          "name": "Упаковка.png",
+          "mime": "image/png",
+          "previewLocal": "./assets/previews/1Ul8SZrcrvH0nb1BR-hgkM06NOfiCr0CH.jpg"
+        },
+        {
+          "id": "1dec6QUjRmq1uC3Y6FdUtfru3KwLgxwMt",
+          "name": "превью2.png",
+          "mime": "image/png",
+          "previewLocal": "./assets/previews/1dec6QUjRmq1uC3Y6FdUtfru3KwLgxwMt.jpg"
+        },
+        {
+          "id": "1ggzlKDyeXqtDvjl2LWkzdx2L9oL8faA0",
+          "name": "превью3.png",
+          "mime": "image/png",
+          "previewLocal": "./assets/previews/1ggzlKDyeXqtDvjl2LWkzdx2L9oL8faA0.jpg"
         }
       ]
     },
@@ -254,10 +242,10 @@
       "mood": "Живая motion-подача, анонсирующие сцены и атмосферный промо-ритм.",
       "items": [
         {
-          "id": "1-VGfclzukwPhgZ0s7OY7b4_Oh7b-6uFe",
-          "name": "анимация на голос.mp4",
+          "id": "16Kg_kUYsgWTyItcPDg1lpkl0FukRg_HX",
+          "name": "Анонс.MP4",
           "mime": "video/mp4",
-          "previewLocal": "./assets/previews/1-VGfclzukwPhgZ0s7OY7b4_Oh7b-6uFe.jpg"
+          "previewLocal": "./assets/previews/16Kg_kUYsgWTyItcPDg1lpkl0FukRg_HX.jpg"
         },
         {
           "id": "1-X2tlfL-g5nmQB267I-iz_COAJ_y-5C4",
@@ -266,10 +254,16 @@
           "previewLocal": "./assets/previews/1-X2tlfL-g5nmQB267I-iz_COAJ_y-5C4.jpg"
         },
         {
-          "id": "16Kg_kUYsgWTyItcPDg1lpkl0FukRg_HX",
-          "name": "Анонс.MP4",
+          "id": "1OdqsfotjGXhPzuoHjzswnwI5KfVLVSeF",
+          "name": "Тест_вступление_сжатое_качество.mp4",
           "mime": "video/mp4",
-          "previewLocal": "./assets/previews/16Kg_kUYsgWTyItcPDg1lpkl0FukRg_HX.jpg"
+          "previewLocal": "./assets/previews/1OdqsfotjGXhPzuoHjzswnwI5KfVLVSeF.jpg"
+        },
+        {
+          "id": "1-VGfclzukwPhgZ0s7OY7b4_Oh7b-6uFe",
+          "name": "анимация на голос.mp4",
+          "mime": "video/mp4",
+          "previewLocal": "./assets/previews/1-VGfclzukwPhgZ0s7OY7b4_Oh7b-6uFe.jpg"
         },
         {
           "id": "1Tuj-i4Ro_3hM7ShfRuwrAPz0aTXKQNes",
@@ -314,12 +308,6 @@
           "previewLocal": "./assets/previews/1Fz6INbCmoon1Zh9NzKrt-yAKDWfZBytb.jpg"
         },
         {
-          "id": "1OdqsfotjGXhPzuoHjzswnwI5KfVLVSeF",
-          "name": "Тест_вступление_сжатое_качество.mp4",
-          "mime": "video/mp4",
-          "previewLocal": "./assets/previews/1OdqsfotjGXhPzuoHjzswnwI5KfVLVSeF.jpg"
-        },
-        {
           "id": "1AfbMXHWLWOLntLZocpVyOjHfnFEwdkqj",
           "name": "турбодень.MOV",
           "mime": "video/quicktime",
@@ -330,8 +318,8 @@
     {
       "id": "menu",
       "title": "Меню",
-      "description": "PDF-материалы и меню из вложенной папки.",
-      "mood": "Документы и макеты в preview-режиме без выхода из сайта.",
+      "description": "Меню и печатные материалы для ресторанной и event-среды.",
+      "mood": "Чистая типографика, предметная подача и аккуратная верстка.",
       "items": [
         {
           "id": "139e8vN2aIhccRSYulkrDfCHdBoja5VnL",
@@ -356,8 +344,8 @@
     {
       "id": "social",
       "title": "Соцсети",
-      "description": "Motion и видеоконтент для соцсетей.",
-      "mood": "Короткие динамичные ролики, собранные в аккуратную dark-mode витрину.",
+      "description": "Посты, stories и digital-материалы для соцсетей.",
+      "mood": "Ритм коротких форматов, яркий акцент и social-first композиция.",
       "items": [
         {
           "id": "1STmmLiL4btlGVqYpr2I7R8m-kN215WPf",
@@ -396,6 +384,42 @@
           "previewLocal": "./assets/previews/1svBjVEmjDFK2NbrQgTcQ4eEEZdJIw98u.jpg"
         },
         {
+          "id": "1MnuHYPLNV1VJMUqt67K7XtCV55yd6DOP",
+          "name": "o1.png",
+          "mime": "image/png",
+          "previewLocal": "./assets/previews/1MnuHYPLNV1VJMUqt67K7XtCV55yd6DOP.jpg"
+        },
+        {
+          "id": "1-BsQjdqbBZOjZtnadVtyreuDxfsjpEQm",
+          "name": "o2.png",
+          "mime": "image/png",
+          "previewLocal": "./assets/previews/1-BsQjdqbBZOjZtnadVtyreuDxfsjpEQm.jpg"
+        },
+        {
+          "id": "1vntTvzEE3_ygOf34yyAbXTQGhoQy1nf5",
+          "name": "o3.png",
+          "mime": "image/png",
+          "previewLocal": "./assets/previews/1vntTvzEE3_ygOf34yyAbXTQGhoQy1nf5.jpg"
+        },
+        {
+          "id": "1Ocq-DL4RLEop2VjUZOKH6wCjWC-PBphN",
+          "name": "o4.pdf",
+          "mime": "application/pdf",
+          "previewLocal": "./assets/previews/1Ocq-DL4RLEop2VjUZOKH6wCjWC-PBphN.jpg"
+        },
+        {
+          "id": "1LQ-z3ft5Rl1LKZJd17n0OYVIFdzZCzQD",
+          "name": "o6.png",
+          "mime": "image/png",
+          "previewLocal": "./assets/previews/1LQ-z3ft5Rl1LKZJd17n0OYVIFdzZCzQD.jpg"
+        },
+        {
+          "id": "1BB4ANnKhAGABBdpLl96mwFZNtbz5Iv_j",
+          "name": "p3.jpg",
+          "mime": "image/jpeg",
+          "previewLocal": "./assets/previews/1BB4ANnKhAGABBdpLl96mwFZNtbz5Iv_j.jpg"
+        },
+        {
           "id": "1HVlWsaKUnLhDf94tKgt_66Bp2misEbjm",
           "name": "Синдикат2.MP4",
           "mime": "video/mp4",
@@ -412,50 +436,14 @@
     {
       "id": "photo",
       "title": "Фото",
-      "description": "Фотораздел с изображениями и PDF-файлами.",
-      "mood": "Статичные кадры, документы и фотоматериалы в единой витрине.",
+      "description": "Обработка фото и финальная визуальная ретушь.",
+      "mood": "Контраст, тональная глубина и polished photo-editing.",
       "items": [
-        {
-          "id": "1rFE8Il4LOK4wnfeXLjQuT675_J5OSG2f",
-          "name": "DSC08210.pdf",
-          "mime": "application/pdf",
-          "previewLocal": "./assets/previews/1rFE8Il4LOK4wnfeXLjQuT675_J5OSG2f.jpg"
-        },
-        {
-          "id": "16eiI0amf4pp76Fc5Jw_Xcn0kZz8El5am",
-          "name": "DSC08502.pdf",
-          "mime": "application/pdf",
-          "previewLocal": "./assets/previews/16eiI0amf4pp76Fc5Jw_Xcn0kZz8El5am.jpg"
-        },
         {
           "id": "1QqHjJE6zrtK3BDvK6-zUs3q96eZnqbM-",
           "name": "DSCF4456.jpg",
           "mime": "image/jpeg",
           "previewLocal": "./assets/previews/1QqHjJE6zrtK3BDvK6-zUs3q96eZnqbM-.jpg"
-        },
-        {
-          "id": "1jv7LEAQoz0uBpcvUZpZdlz0WWW0LDm69",
-          "name": "f-02312.pdf",
-          "mime": "application/pdf",
-          "previewLocal": "./assets/previews/1jv7LEAQoz0uBpcvUZpZdlz0WWW0LDm69.jpg"
-        },
-        {
-          "id": "1RpaqeHpp2k8YlSKBFPD0p9vWHSPFOIig",
-          "name": "f-02323.pdf",
-          "mime": "application/pdf",
-          "previewLocal": "./assets/previews/1RpaqeHpp2k8YlSKBFPD0p9vWHSPFOIig.jpg"
-        },
-        {
-          "id": "1Hz4Aftvcnb6mGqLXGg_lq4rO-uJXXlu1",
-          "name": "f-09225.pdf",
-          "mime": "application/pdf",
-          "previewLocal": "./assets/previews/1Hz4Aftvcnb6mGqLXGg_lq4rO-uJXXlu1.jpg"
-        },
-        {
-          "id": "1STMGQOzPl3hVcTB7v-VuybaJV2kAGo6i",
-          "name": "f-09230.pdf",
-          "mime": "application/pdf",
-          "previewLocal": "./assets/previews/1STMGQOzPl3hVcTB7v-VuybaJV2kAGo6i.jpg"
         },
         {
           "id": "1gXrhGPOZuZDc9zu0jjcNpJpSjxP63i3C",
@@ -464,112 +452,10 @@
           "previewLocal": "./assets/previews/1gXrhGPOZuZDc9zu0jjcNpJpSjxP63i3C.jpg"
         },
         {
-          "id": "1soOKGI3M5JcLolJ-YWhSOnAhfME8J_H-",
-          "name": "f-09253.pdf",
-          "mime": "application/pdf",
-          "previewLocal": "./assets/previews/1soOKGI3M5JcLolJ-YWhSOnAhfME8J_H-.jpg"
-        },
-        {
-          "id": "1Svy6vMTAV4nTDndHoBgjs3blPoBt2xrG",
-          "name": "f-09263.pdf",
-          "mime": "application/pdf",
-          "previewLocal": "./assets/previews/1Svy6vMTAV4nTDndHoBgjs3blPoBt2xrG.jpg"
-        },
-        {
-          "id": "1blEPrY195xwnsxHxV-bzytYmsxaWzAFY",
-          "name": "f-09271.pdf",
-          "mime": "application/pdf",
-          "previewLocal": "./assets/previews/1blEPrY195xwnsxHxV-bzytYmsxaWzAFY.jpg"
-        },
-        {
-          "id": "1Z1yEuU5okQToAulBf4pQ8UP03ow4vQjF",
-          "name": "f-09283.pdf",
-          "mime": "application/pdf",
-          "previewLocal": "./assets/previews/1Z1yEuU5okQToAulBf4pQ8UP03ow4vQjF.jpg"
-        },
-        {
-          "id": "1s7g5j_gm8w5m2cAKcqMvfreS1mj7aOYh",
-          "name": "f-09291.pdf",
-          "mime": "application/pdf",
-          "previewLocal": "./assets/previews/1s7g5j_gm8w5m2cAKcqMvfreS1mj7aOYh.jpg"
-        },
-        {
-          "id": "1WoIbQfXdb3suJQ7dXncOPdvlG89syMZ0",
-          "name": "f-09297.pdf",
-          "mime": "application/pdf",
-          "previewLocal": "./assets/previews/1WoIbQfXdb3suJQ7dXncOPdvlG89syMZ0.jpg"
-        },
-        {
-          "id": "1f1o_4Bxnh8K9D_jXFeNnkfDSisODgr23",
-          "name": "f-09302.png",
-          "mime": "image/png",
-          "previewLocal": "./assets/previews/1f1o_4Bxnh8K9D_jXFeNnkfDSisODgr23.jpg"
-        },
-        {
-          "id": "1I7Px2oJSg-3HnonsY7Fwec7-aKCv6W1D",
-          "name": "f-09329.png",
-          "mime": "image/png",
-          "previewLocal": "./assets/previews/1I7Px2oJSg-3HnonsY7Fwec7-aKCv6W1D.jpg"
-        },
-        {
-          "id": "1FDMMBMB01w1H6sJiJIqqSs22cympGTwu",
-          "name": "f-09341.pdf",
-          "mime": "application/pdf",
-          "previewLocal": "./assets/previews/1FDMMBMB01w1H6sJiJIqqSs22cympGTwu.jpg"
-        },
-        {
-          "id": "1OqDssCEzZllHHDFNybZ1mg2JfAyTPevO",
-          "name": "f-09386.png",
-          "mime": "image/png",
-          "previewLocal": "./assets/previews/1OqDssCEzZllHHDFNybZ1mg2JfAyTPevO.jpg"
-        },
-        {
           "id": "1-f8_frMnxl6RqQz5sDNnRWljXmTqjgBK",
           "name": "Копия DSC08210.pdf",
           "mime": "application/pdf",
           "previewLocal": "./assets/previews/1-f8_frMnxl6RqQz5sDNnRWljXmTqjgBK.jpg"
-        },
-        {
-          "id": "1NYKGV73i-1rzYpPmHJXDj2PGEPDcLWU2",
-          "name": "Копия DSC08502.pdf",
-          "mime": "application/pdf",
-          "previewLocal": "./assets/previews/1NYKGV73i-1rzYpPmHJXDj2PGEPDcLWU2.jpg"
-        },
-        {
-          "id": "1_jt9wvboEm-hxLFe57ztJCZF4kMJJjsX",
-          "name": "Копия DSCF4456.jpg",
-          "mime": "image/jpeg",
-          "previewLocal": "./assets/previews/1_jt9wvboEm-hxLFe57ztJCZF4kMJJjsX.jpg"
-        },
-        {
-          "id": "1RK2CsO6Dcn7iwNgjiTLi24Hy2_6jnTYq",
-          "name": "Копия f-02312.pdf",
-          "mime": "application/pdf",
-          "previewLocal": "./assets/previews/1RK2CsO6Dcn7iwNgjiTLi24Hy2_6jnTYq.jpg"
-        },
-        {
-          "id": "1YKViKqG6xWXpOtIDzjB0_FF_UGCMzowz",
-          "name": "Копия f-02323.pdf",
-          "mime": "application/pdf",
-          "previewLocal": "./assets/previews/1YKViKqG6xWXpOtIDzjB0_FF_UGCMzowz.jpg"
-        },
-        {
-          "id": "1cW-KZFZQt6ss3XCqnJ3PXHK_jJ4emzAL",
-          "name": "Копия f-09225.pdf",
-          "mime": "application/pdf",
-          "previewLocal": "./assets/previews/1cW-KZFZQt6ss3XCqnJ3PXHK_jJ4emzAL.jpg"
-        },
-        {
-          "id": "1k9l1KRAljTmq1J0Lb1EYupuF_8zPJLuJ",
-          "name": "Копия f-09230.pdf",
-          "mime": "application/pdf",
-          "previewLocal": "./assets/previews/1k9l1KRAljTmq1J0Lb1EYupuF_8zPJLuJ.jpg"
-        },
-        {
-          "id": "1Q0KcYKl0dWeVmCXB_DA02L7QyXmoM6QM",
-          "name": "Копия f-09241.pdf",
-          "mime": "application/pdf",
-          "previewLocal": "./assets/previews/1Q0KcYKl0dWeVmCXB_DA02L7QyXmoM6QM.jpg"
         },
         {
           "id": "1dIZaVJIVldFl1PO4NcEkv3k9x9umGR0W",
@@ -594,42 +480,6 @@
           "name": "Копия f-09283.pdf",
           "mime": "application/pdf",
           "previewLocal": "./assets/previews/1j2iRQ4PMQf0kBaVMPOENk3_sZqea7W9X.jpg"
-        },
-        {
-          "id": "1Mml0pVSdaLr8G0kpMdpjCAmCEYdqKhtc",
-          "name": "Копия f-09291.pdf",
-          "mime": "application/pdf",
-          "previewLocal": "./assets/previews/1Mml0pVSdaLr8G0kpMdpjCAmCEYdqKhtc.jpg"
-        },
-        {
-          "id": "1T3xD8TDwv_9S_GHkvlcpowisVl6sYs-P",
-          "name": "Копия f-09297.pdf",
-          "mime": "application/pdf",
-          "previewLocal": "./assets/previews/1T3xD8TDwv_9S_GHkvlcpowisVl6sYs-P.jpg"
-        },
-        {
-          "id": "1amijIaJAE9c8H7tC7h7URhRXSORrGk5h",
-          "name": "Копия f-09302.png",
-          "mime": "image/png",
-          "previewLocal": "./assets/previews/1amijIaJAE9c8H7tC7h7URhRXSORrGk5h.jpg"
-        },
-        {
-          "id": "12l3mWFfLhNqIfFAYrOV4L9ga7kYRx-CC",
-          "name": "Копия f-09329.png",
-          "mime": "image/png",
-          "previewLocal": "./assets/previews/12l3mWFfLhNqIfFAYrOV4L9ga7kYRx-CC.jpg"
-        },
-        {
-          "id": "16WKAzHmryNrvajH2pT-h79oS-GOGDIUp",
-          "name": "Копия f-09341.pdf",
-          "mime": "application/pdf",
-          "previewLocal": "./assets/previews/16WKAzHmryNrvajH2pT-h79oS-GOGDIUp.jpg"
-        },
-        {
-          "id": "1WbPpYBArpYAwML6r9zseFZW4S9lqxyoK",
-          "name": "Копия f-09386.png",
-          "mime": "image/png",
-          "previewLocal": "./assets/previews/1WbPpYBArpYAwML6r9zseFZW4S9lqxyoK.jpg"
         }
       ]
     }
