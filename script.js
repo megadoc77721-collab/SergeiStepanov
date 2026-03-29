@@ -215,69 +215,84 @@ function createMediaThumb(item, index, compact = false) {
 
 const CATEGORY_LAYOUTS = {
   prints: [
+    "story-card--wide",
+    "story-card--wide",
+    "",
+    "",
     "story-card--feature",
-    "story-card--wide",
     "",
     "",
     "story-card--wide",
     "",
+    "story-card--feature",
     "",
-    "story-card--feature"
+    "",
+    "story-card--wide"
   ],
   banners: [
     "project-card--feature",
-    "",
-    "project-card--tall",
-    "",
     "project-card--wide",
     "",
     "project-card--tall",
     "",
-    "project-card--wide",
-    "",
-    "",
-    "project-card--feature"
-  ],
-  events: [
-    "project-card--feature",
-    "",
-    "project-card--wide",
-    "",
     "project-card--feature",
     "",
     "",
-    "project-card--wide",
-    "",
-    "project-card--tall"
-  ],
-  social: [
-    "project-card--feature",
     "",
     "project-card--wide",
-    "",
-    "project-card--feature",
-    "",
-    "project-card--wide",
-    ""
-  ],
-  photo: [
-    "project-card--wide",
-    "",
-    "",
     "project-card--tall",
     "",
-    "project-card--wide",
-    "",
-    "",
-    "project-card--tall",
-    "",
-    "project-card--wide",
-    ""
-  ],
-  menu: [
     "project-card--feature",
     "",
     "project-card--wide"
+  ],
+  events: [
+    "project-card--feature",
+    "project-card--wide",
+    "",
+    "",
+    "project-card--feature",
+    "",
+    "project-card--tall",
+    "",
+    "",
+    "project-card--wide",
+    "",
+    "project-card--feature",
+    ""
+  ],
+  social: [
+    "project-card--feature",
+    "project-card--wide",
+    "",
+    "",
+    "project-card--wide",
+    "project-card--tall",
+    "",
+    "project-card--feature",
+    "",
+    "project-card--wide",
+    "",
+    "project-card--feature",
+    "",
+    ""
+  ],
+  photo: [
+    "project-card--feature",
+    "",
+    "project-card--tall",
+    "",
+    "project-card--wide",
+    "",
+    "",
+    "project-card--tall",
+    "",
+    "project-card--wide"
+  ],
+  menu: [
+    "project-card--wide",
+    "",
+    ""
   ]
 };
 

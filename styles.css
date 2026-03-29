@@ -546,15 +546,15 @@ textarea {
 
 .category-panel[data-category="events"] .project-grid,
 .category-panel[data-category="social"] .project-grid {
-  gap: 20px;
+  gap: 18px;
 }
 
 .category-panel[data-category="photo"] .project-grid {
-  gap: 14px;
+  gap: 16px;
 }
 
 .category-panel[data-category="menu"] .project-grid {
-  gap: 18px;
+  gap: 14px;
 }
 
 .project-card {
@@ -585,33 +585,50 @@ textarea {
 }
 
 .category-panel[data-category="banners"] .project-card {
-  min-height: 360px;
+  min-height: 340px;
 }
 
 .category-panel[data-category="banners"] .project-card--feature {
-  min-height: 460px;
+  min-height: 430px;
+}
+
+.category-panel[data-category="banners"] .project-card--wide {
+  min-height: 380px;
 }
 
 .category-panel[data-category="events"] .project-card,
 .category-panel[data-category="social"] .project-card {
-  min-height: 400px;
+  min-height: 380px;
 }
 
 .category-panel[data-category="events"] .project-card--feature,
 .category-panel[data-category="social"] .project-card--feature {
-  min-height: 500px;
-}
-
-.category-panel[data-category="photo"] .project-card {
-  min-height: 340px;
-}
-
-.category-panel[data-category="photo"] .project-card--tall {
   min-height: 460px;
 }
 
+.category-panel[data-category="events"] .project-card--wide,
+.category-panel[data-category="social"] .project-card--wide {
+  min-height: 360px;
+}
+
+.category-panel[data-category="photo"] .project-card {
+  min-height: 320px;
+}
+
+.category-panel[data-category="photo"] .project-card--tall {
+  min-height: 420px;
+}
+
+.category-panel[data-category="photo"] .project-card--feature {
+  min-height: 400px;
+}
+
 .category-panel[data-category="menu"] .project-card {
-  min-height: 380px;
+  min-height: 300px;
+}
+
+.category-panel[data-category="menu"] .project-card--feature {
+  min-height: 320px;
 }
 
 .project-card:hover,
@@ -817,8 +834,16 @@ textarea {
   min-height: 0;
 }
 
-.category-panel[data-category="prints"] .story-card--wide .story-media {
+.category-panel[data-category="prints"] .story-card .story-media {
   min-height: 360px;
+}
+
+.category-panel[data-category="prints"] .story-card--wide .story-media {
+  min-height: 340px;
+}
+
+.category-panel[data-category="prints"] .story-card--feature .story-media {
+  min-height: 420px;
 }
 
 .story-sheen {
